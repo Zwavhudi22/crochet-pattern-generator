@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
   <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
   <link rel="stylesheet" href="src/style.css" />
   <title>AI Crochet Pattern Generator</title>
@@ -19,14 +20,11 @@
         autofocus 
         required 
         autocomplete="off" 
-        class="instructions" />
+        class="instructions" 
+        id="user-instructions" />
         <input type="submit" class="submit-button" />
       </form>
-      <div class="pattern" id="pattern">
-        The Pattern..
-        <br />
-        Here's a crochet beanie pattern for you
-      </div>
+      <div class="pattern" id="pattern"></div>
     </main>
 
     <footer>
