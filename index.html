@@ -15,16 +15,19 @@
     </header>
 
     <main>
-      <form id="pattern-generator-form">
-        <input type="text" placeholder="What would you like to crochet today?" 
-        autofocus 
-        required 
-        autocomplete="off" 
-        class="instructions" 
-        id="user-instructions" />
-        <input type="submit" class="submit-button" />
-      </form>
-      <div class="pattern" id="pattern"></div>
+      <div class="form-container">
+        <form id="pattern-generator-form">
+          <input type="text" placeholder="What would you like to crochet today?" 
+          autofocus 
+          required 
+          autocomplete="off" 
+          class="instructions" 
+          id="user-instructions" />
+          <input type="submit" class="submit-button" />
+        </form>
+        <small class="hint">i.e beanie, scarf, or baby booties</small>
+      </div>
+      <div class="pattern hidden" id="pattern"></div>
     </main>
 
     <footer>
